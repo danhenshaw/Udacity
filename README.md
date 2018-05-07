@@ -1,5 +1,5 @@
 # Udacity iOS Developer Nanodegree
--
+
 A collection of the apps completed throughout my completion of the Udacity iOS Developer Nanodegree
 
 ## Apps

@@ -1,5 +1,5 @@
 # Virtual Tourist
--
+
 Virtual Tourist is an app designed as part of the Udacity iOS Developer Nanodegree.
 
 This app allows users specify travel locations around the world, and create virtual photo albums for each location. The locations and photo albums will be stored in Core Data.
@@ -34,7 +34,7 @@ The scenes are described in detail below:
 
 
 ## Author
--
+
 Daniel Henshaw, danieljhenshaw@gmail.com
 
 

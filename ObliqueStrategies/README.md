@@ -1,5 +1,5 @@
 # Oblique Strategies
--
+
 
 Oblique Strategies (the App) is an app designed as part of the Udacity iOS Developer Nanodegree as the Final Project: You Decide.
 
@@ -15,7 +15,7 @@ From the introduction to the 2001 edition:
 
 
 ## Features
--
+
 The app loads to a plain black screen asking users to "tap [the] screen for an Oblique Strategy". At this initial stage, users have three options available:
     (1) click on the screen to load an Oblique Strategy,
     (2) view all oblique strategies, or
@@ -35,7 +35,7 @@ Once the Oblique Strategy has been downloaded, it is stored in one of three meth
 
 
 ## Resources
--
+
 http://brianeno.needsyourhelp.org/info
 Oblique Strategies by Brian Eno and Peter Schmidt
 Data from The Oblique Strategies Website (http://www.rtqe.net/ObliqueStrategies/)
@@ -44,7 +44,7 @@ Hosted with Heroku
 
 
 ## Future Improvements
--
+
 - Make further improvements to backend code
 - Improve the UI/UX experience
 - Create your own 'Oblique Strategies'
@@ -52,10 +52,10 @@ Hosted with Heroku
 
 
 ## Author
--
+
 Daniel Henshaw, danieljhenshaw@gmail.com
 
 
 ## License
--
+
 WeatherApp is available under the [MIT license](https://opensource.org/licenses/MIT)

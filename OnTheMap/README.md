@@ -1,12 +1,12 @@
 # On The Map
--
+
 On The Map is an app designed as part of the Udacity iOS Developer Nanodegree.
 
 The On The Map app allows users to share their location and a URL with their fellow students. To visualize this data, On The Map uses a map with pins for location and pin annotations for student names and URLs, allowing students to place themselves “on the map,” so to speak.
 
 
 ## Features
--
+
 First, the user logs in to the app using their Udacity username and password. After login, the app downloads locations and links previously posted by other students. These links can point to any URL that a student chooses. We encourage students to share something about their work or interests.
 
 After viewing the information posted by other students, a user can post their own location and link. The locations are specified with a string and forward geocoded. They can be as specific as a full street address or as generic as “Costa Rica” or “Seattle, WA.”
@@ -27,7 +27,6 @@ These three scenes are described in detail below.
 - If the connection is made and the email and password are good, the app will segue to the Map and Table Tabbed View.
 - If the login does not succeed, the user will be presented with an alert view specifying whether it was a failed network connection, or an incorrect email and password.
 
-
 ### Map And Table Tabbed View
 - This view has two tabs at the bottom: one specifying a map, and the other a table.
 - When the map tab is selected, the view displays a map with pins specifying the last 100 locations posted by students.
@@ -40,7 +39,6 @@ These three scenes are described in detail below.
 - The rightmost bar button will be a refresh button. Clicking on the button will refresh the entire data set by downloading and displaying the most recent 100 posts made by students.
 - The bar button directly to its left will be a pin button. Clicking on the pin button will modally present the Information Posting View.
 
-
 ### Information Posting View
 - The Information Posting View allows users to input their own data.
 - When the Information Posting View is modally presented, the user sees two text fields: one asks for a location and the other asks for a link.
@@ -52,7 +50,7 @@ These three scenes are described in detail below.
 
 
 ## Author
--
+
 Daniel Henshaw, danieljhenshaw@gmail.com
 
 
