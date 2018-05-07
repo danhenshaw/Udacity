@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="syO-ok-ex7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Oblique Strategies-->
+        <scene sceneID="Zbd-cD-Mdx">
+            <objects>
+                <viewController storyboardIdentifier="InitialViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Txo-zT-Q5c" customClass="InitialViewController" customModule="obliqueStrategies" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="obv-Vw-208"/>
+                        <viewControllerLayoutGuide type="bottom" id="xCZ-f1-ns6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E33-q7-9OO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9Y-KG-I4m">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JvE-2y-6A1"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="View Favourites" id="A81-e0-Y6E">
+                                        <connections>
+                                            <action selector="viewFavouritesButtonPressed:" destination="Txo-zT-Q5c" id="ILc-hN-ESf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cum-PD-Dld"/>
+                                    <barButtonItem title="View All" id="cDH-lf-JCa">
+                                        <connections>
+                                            <action selector="viewAllButtonPressed:" destination="Txo-zT-Q5c" id="NSd-e6-jzq"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="a9Y-KG-I4m" secondAttribute="trailing" id="I3d-D2-tJH"/>
+                            <constraint firstItem="a9Y-KG-I4m" firstAttribute="leading" secondItem="E33-q7-9OO" secondAttribute="leading" id="SiK-v0-qIY"/>
+                            <constraint firstItem="xCZ-f1-ns6" firstAttribute="top" secondItem="a9Y-KG-I4m" secondAttribute="bottom" id="THg-7K-K23"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Oblique Strategies" id="EWx-7k-k4u">
+                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="lnk-ch-7Kh">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="Txo-zT-Q5c" id="ddJ-zg-PM1"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="trash" id="nuu-9o-xcS">
+                                <connections>
+                                    <action selector="removeFromFavouritesButtonPressed:" destination="Txo-zT-Q5c" id="L3r-S8-D3H"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="add" id="1ZO-UW-Azp">
+                                <connections>
+                                    <action selector="addToFavouritesButtonPressed:" destination="Txo-zT-Q5c" id="gzO-ed-jXy"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addToFavouritesButton" destination="1ZO-UW-Azp" id="Wfy-HO-pmk"/>
+                        <outlet property="navigationBar" destination="EWx-7k-k4u" id="ltr-rm-y8N"/>
+                        <outlet property="removeFromFavouritesButton" destination="nuu-9o-xcS" id="ENZ-7q-673"/>
+                        <outlet property="shareButton" destination="lnk-ch-7Kh" id="hHx-AS-jkA"/>
+                        <outlet property="toolbar" destination="a9Y-KG-I4m" id="JsV-7n-d8L"/>
+                        <outlet property="viewAllButton" destination="cDH-lf-JCa" id="nnA-gq-wUN"/>
+                        <outlet property="viewFavouritesButton" destination="A81-e0-Y6E" id="CwU-dy-CHR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ftl-wS-lyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1991.2" y="-576.1619190404798"/>
+        </scene>
+        <!--All Oblique Strategies-->
+        <scene sceneID="BF5-1y-I2F">
+            <objects>
+                <tableViewController storyboardIdentifier="AllTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TAs-Tm-Vyt" customClass="AllTableViewController" customModule="obliqueStrategies" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="YRL-Tz-7An">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="P7V-Il-W8F" detailTextLabel="8Bd-VM-oil" rowHeight="50" style="IBUITableViewCellStyleSubtitle" id="FaG-zi-Xdn">
+                                <rect key="frame" x="0.0" y="92" width="375" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FaG-zi-Xdn" id="RFr-aI-jyL">
+                                    <frame key="frameInset" width="375" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P7V-Il-W8F">
+                                            <frame key="frameInset" minX="15" minY="7" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Bd-VM-oil">
+                                            <frame key="frameInset" minX="15" minY="28" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TAs-Tm-Vyt" id="reR-Sk-hru"/>
+                            <outlet property="delegate" destination="TAs-Tm-Vyt" id="AF9-7R-9xn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Oblique Strategies" id="2Yq-48-maQ">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="KHi-O1-6jZ">
+                            <connections>
+                                <action selector="homeButtonPressed:" destination="TAs-Tm-Vyt" id="mLH-44-U9S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="obliqueStrategyTable" destination="YRL-Tz-7An" id="Ysr-zR-G80"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CT9-OZ-ffB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4271.1999999999998" y="-144.3778110944528"/>
+        </scene>
+        <!--Favourite Oblique Strategies-->
+        <scene sceneID="rwP-hB-GXV">
+            <objects>
+                <tableViewController storyboardIdentifier="FavouritesTableViewController" id="nc9-F6-ukS" customClass="FavouritesTableViewController" customModule="obliqueStrategies" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="w0I-09-OOJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="mE2-MU-dp7" detailTextLabel="LWM-OD-fWu" style="IBUITableViewCellStyleSubtitle" id="8dK-lp-0IJ">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8dK-lp-0IJ" id="vLz-AM-6uO">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mE2-MU-dp7">
+                                            <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LWM-OD-fWu">
+                                            <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nc9-F6-ukS" id="dpt-1I-KG2"/>
+                            <outlet property="delegate" destination="nc9-F6-ukS" id="Tgq-5W-KZ0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Favourite Oblique Strategies" id="LfX-JR-9gD">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="5ru-Qk-Npx">
+                            <connections>
+                                <action selector="homeButtonPressed:" destination="nc9-F6-ukS" id="e5Y-gB-h4N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="favourtiesTable" destination="w0I-09-OOJ" id="K8L-nE-lCS"/>
+                        <outlet property="homeButton" destination="5ru-Qk-Npx" id="OMB-Bd-yEi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qST-l2-9ah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4271.1999999999998" y="-897.30134932533736"/>
+        </scene>
+        <!--All Navigation Controller-->
+        <scene sceneID="7Lv-rE-V9I">
+            <objects>
+                <navigationController storyboardIdentifier="AllNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="nXg-MI-qJ9" customClass="AllNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ma0-ei-6c1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TAs-Tm-Vyt" kind="relationship" relationship="rootViewController" id="fMy-aZ-hSt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o02-sM-h5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3332" y="-144.3778110944528"/>
+        </scene>
+        <!--Favourites Navigation Controller-->
+        <scene sceneID="FLp-lI-nqi">
+            <objects>
+                <navigationController storyboardIdentifier="FavouritesNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="YnQ-Cs-Ryi" customClass="FavouritesNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EM4-HG-JIp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nc9-F6-ukS" kind="relationship" relationship="rootViewController" id="ru6-bA-PUk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xzo-Pi-NuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3332" y="-897.30134932533736"/>
+        </scene>
+        <!--Initial Navigation Controller-->
+        <scene sceneID="KN0-1r-vbQ">
+            <objects>
+                <navigationController storyboardIdentifier="InitialNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="syO-ok-ex7" customClass="InitialNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N9J-co-H06">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Txo-zT-Q5c" kind="relationship" relationship="rootViewController" id="Szc-cc-Zch"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6wm-VI-0pY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="-576.1619190404798"/>
+        </scene>
+    </scenes>
+</document>
