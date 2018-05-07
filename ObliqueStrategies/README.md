@@ -9,9 +9,9 @@ Oblique Strategies are a set of cards created by Brian Eno and Peter Schmidt and
 
 From the introduction to the 2001 edition:
 
-    "These cards evolved from separate observations of the principles underlying what we were doing. Sometimes they were recognised in retrospect (intellect catching up with intuition), sometimes they were identified as they were happening, sometimes they were formulated.
+    "These cards evolved from separate observations of the principles underlying what we were doing. Sometimes they were recognised in retrospect (intellect catching up with intuition), sometimes they were identified as they were happening, sometimes they were formulated."
 
-    They can be used as a pack, or by drawing a single card from the shuffled pack when a dilemma occurs in a working situation. In this case the card is trusted even if its appropriateness is quite unclear..."
+    "They can be used as a pack, or by drawing a single card from the shuffled pack when a dilemma occurs in a working situation. In this case the card is trusted even if its appropriateness is quite unclear..."
 
 
 ## Features
@@ -36,11 +36,11 @@ Once the Oblique Strategy has been downloaded, it is stored in one of three meth
 
 ## Resources
 
-http://brianeno.needsyourhelp.org/info
-Oblique Strategies by Brian Eno and Peter Schmidt
-Data from The Oblique Strategies Website (http://www.rtqe.net/ObliqueStrategies/)
-API made with Sinatra by Andrew Monks
-Hosted with Heroku
+http://brianeno.needsyourhelp.org/info <br />
+Oblique Strategies by Brian Eno and Peter Schmidt <br />
+Data from The Oblique Strategies Website (http://www.rtqe.net/ObliqueStrategies/) <br />
+API made with Sinatra by Andrew Monks <br />
+Hosted with Heroku <br />
 
 
 ## Future Improvements
